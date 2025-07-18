@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== Custom Animation: Fade In ===== */
+/* === Custom Animations === */
+
+/* Fade In */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -13,12 +15,53 @@
     transform: translateY(0);
   }
 }
-
 .animate-fade-in {
   animation: fade-in 0.7s ease-out forwards;
 }
 
-/* ===== Optional: Add custom scrollbar styling ===== */
+/* Credits Roll */
+@keyframes credits-roll {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-credits {
+  animation: credits-roll 1s ease-out forwards;
+}
+
+/* Glow Button */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px #e11d48; }
+  50% { box-shadow: 0 0 20px #e11d48; }
+  100% { box-shadow: 0 0 5px #e11d48; }
+}
+.glow-button {
+  animation: glow 1.5s infinite;
+}
+
+/* Pan + Blur Reveal */
+@keyframes pan-blur {
+  0% {
+    transform: translateX(-30px);
+    filter: blur(8px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.animate-pan-blur {
+  animation: pan-blur 1s ease-out forwards;
+}
+
+/* === Scrollbar Styling (Optional) === */
 ::-webkit-scrollbar {
   width: 8px;
 }
