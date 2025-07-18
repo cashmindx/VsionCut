@@ -8,11 +8,33 @@ export default function App() {
   return (
     <div className="bg-black text-white min-h-screen font-sans">
       {/* Header */}
-      <header className="text-center py-16">
+      <header className="text-center py-10">
         <Film className="mx-auto w-12 h-12 text-red-500" />
         <h1 className="text-5xl font-bold mt-4">VisionCut</h1>
-        <p className="mt-2 text-lg text-gray-400">Cinematic storytelling powered by AI</p>
+        <p className="mt-2 text-lg text-gray-400">
+          Cinematic storytelling powered by AI
+        </p>
       </header>
+
+      {/* Background Welcome Video */}
+      <section className="relative h-[500px] overflow-hidden mb-16">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          src="/videos/welcome.mp4"
+        />
+        <div className="relative z-10 flex items-center justify-center h-full">
+          <div className="bg-black bg-opacity-60 backdrop-blur-md px-6 py-4 rounded">
+            <h2 className="text-white text-4xl font-bold">Welcome to VisionCut</h2>
+            <p className="text-gray-300 mt-2 text-lg">
+              Create and explore cinematic scenes with the power of AI.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Genre Gallery */}
       <section className="grid grid-cols-2 md:grid-cols-4 gap-6 px-10">
@@ -34,7 +56,7 @@ export default function App() {
         ))}
       </section>
 
-      {/* Scene Packs / Payment Options */}
+      {/* Scene Packs / Payments */}
       <section className="mt-16 px-10">
         <h2 className="text-2xl font-bold mb-4">Buy Scene Packs</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
