@@ -2,66 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* === Custom Animations === */
-
-/* Fade In */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .animate-fade-in {
-  animation: fade-in 0.7s ease-out forwards;
-}
-
-/* Credits Roll */
-@keyframes credits-roll {
-  0% {
-    opacity: 0;
-    transform: translateY(20px) scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+  @apply animate-fade-in;
 }
 .animate-credits {
-  animation: credits-roll 1s ease-out forwards;
-}
-
-/* Glow Button */
-@keyframes glow {
-  0% { box-shadow: 0 0 5px #e11d48; }
-  50% { box-shadow: 0 0 20px #e11d48; }
-  100% { box-shadow: 0 0 5px #e11d48; }
+  @apply animate-credits-roll;
 }
 .glow-button {
-  animation: glow 1.5s infinite;
-}
-
-/* Pan + Blur Reveal */
-@keyframes pan-blur {
-  0% {
-    transform: translateX(-30px);
-    filter: blur(8px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    filter: blur(0);
-    opacity: 1;
-  }
+  @apply animate-glow;
 }
 .animate-pan-blur {
-  animation: pan-blur 1s ease-out forwards;
+  @apply animate-pan-blur;
 }
 
-/* === Scrollbar Styling (Optional) === */
+/* Optional scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
