@@ -1,40 +1,8 @@
-# Node.js
 node_modules/
 dist/
-.build/
-.cache/
-
-# Vite & build output
-.vite/
-*.log
-
-# Environment variables
-.env
-.env.*
-
-# System files
+.vscode/
 .DS_Store
 Thumbs.db
-
-# VS Code settings
-.vscode/
-
-# Netlify deploy folder (optional)
-.netlify/
-
-# OS-specific files
-*.swp
-*.swo
-
-# Optional: Yarn/PNPM/NPM lockfiles (if using only one)
-# Uncomment based on your package manager
-# yarn.lock
-# pnpm-lock.yaml
-# package-lock.json
-
-# Firebase (if used later)
-.firebase/
-
-# IDE folders
-.idea/
-*.iml
+.env
+*.log
+npm-debug.log*
