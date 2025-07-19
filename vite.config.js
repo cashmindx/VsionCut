@@ -6,8 +6,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      input: './index.html',
-    },
+  },
+  // Optional: helps with routing fallback on Netlify
+  server: {
+    open: true,
   },
 });
