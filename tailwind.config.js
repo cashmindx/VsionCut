@@ -8,15 +8,36 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui'],
       },
       colors: {
-        red: { 600: '#e11d48', 700: '#be123c' },
-        gray: { 900: '#111827', 800: '#1f2937', 700: '#374151' },
+        red: {
+          600: '#e11d48',
+          700: '#be123c',
+        },
+        gray: {
+          700: '#374151',
+          800: '#1f2937',
+          900: '#111827',
+        },
         black: '#000000',
-        indigo: { 600: '#4b5bd4', 900: '#191e4d' },
-        purple: { 800: '#4c1d95', 500: '#a78bfa' },
+        indigo: {
+          600: '#4b5bd4',
+          900: '#191e4d',
+        },
+        purple: {
+          500: '#a78bfa',
+          800: '#4c1d95',
+        },
       },
-      opacity: { 30: '0.3', 60: '0.6' },
-      zIndex: { 10: '10', 50: '50' },
-      height: { 'screen-sm': '500px' },
+      opacity: {
+        30: '0.3',
+        60: '0.6',
+      },
+      zIndex: {
+        10: '10',
+        50: '50',
+      },
+      height: {
+        'screen-sm': '500px',
+      },
       keyframes: {
         'fade-in': {
           '0%': { opacity: '0', transform: 'translateY(10px)' },
@@ -27,12 +48,20 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
         },
         'glow': {
-          '0%,100%': { boxShadow: '0 0 5px #e11d48' },
+          '0%, 100%': { boxShadow: '0 0 5px #e11d48' },
           '50%': { boxShadow: '0 0 20px #e11d48' },
         },
         'pan-blur': {
-          '0%': { transform: 'translateX(-30px)', filter: 'blur(8px)', opacity: '0' },
-          '100%': { transform: 'translateX(0)', filter: 'blur(0)', opacity: '1' },
+          '0%': {
+            transform: 'translateX(-30px)',
+            filter: 'blur(8px)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            filter: 'blur(0)',
+            opacity: '1',
+          },
         },
       },
       animation: {
